@@ -1,0 +1,6 @@
+{
+  "name": "24Hrs Motorcycle Motorbike Car Battery & Tyre Repair Emergency Rescue Hotline",
+  "description": "24/7 Emergency Roadside Assistance in Singapore for car and motorcycle battery replacement, tyre repair, and vehicle rescue.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
