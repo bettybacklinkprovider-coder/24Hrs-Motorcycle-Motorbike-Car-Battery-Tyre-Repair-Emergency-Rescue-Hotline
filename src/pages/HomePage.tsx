@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { PageRoute } from '../types';
 import { BUSINESS_INFO, SERVICES_LIST } from '../data/servicesData';
+import { APP_IMAGES } from '../assets/images';
 
 interface HomePageProps {
   onNavigate: (route: PageRoute) => void;
@@ -63,35 +64,35 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
       desc: 'Mobile diagnostic voltage testing, on-site jump start, and replacement with fresh heavy-duty automotive batteries.',
       icon: Battery,
       serviceKey: 'Car Battery Jump-Start & Replacement',
-      image: '/src/assets/images/service_battery_replacement_1791785950727.jpg'
+      image: APP_IMAGES.serviceBattery
     },
     {
       title: 'Motorcycle Battery Replacement',
       desc: 'Specialized 12V motorcycle battery diagnostics and on-the-spot installation for bikes, scooters, and cruisers.',
       icon: Bike,
       serviceKey: 'Motorcycle & Motorbike Battery Services',
-      image: '/src/assets/images/service_battery_replacement_1791785950727.jpg'
+      image: APP_IMAGES.serviceBattery
     },
     {
       title: 'Tyre Repair',
       desc: 'On-the-spot tubeless puncture plugging, valve inspection, and rapid re-inflation across all Singapore roadways.',
       icon: Wrench,
       serviceKey: 'Car Tyre Repair & Replacement',
-      image: '/src/assets/images/service_tyre_repair_1791785967377.jpg'
+      image: APP_IMAGES.serviceTyre
     },
     {
       title: 'Tyre Replacement',
       desc: 'Spare wheel mounting or new tyre replacement when your wheel suffers catastrophic puncture or sidewall rupture.',
       icon: Car,
       serviceKey: 'Car Tyre Repair & Replacement',
-      image: '/src/assets/images/service_tyre_repair_1791785967377.jpg'
+      image: APP_IMAGES.serviceTyre
     },
     {
       title: 'Emergency Vehicle Rescue',
       desc: 'Comprehensive 24/7 rescue assistance for stalled engines, electrical cutouts, and expressway breakdowns.',
       icon: Zap,
       serviceKey: 'Emergency Roadside Rescue',
-      image: '/src/assets/images/hero_emergency_rescue_1791785925108.jpg'
+      image: APP_IMAGES.hero
     }
   ];
 
@@ -110,7 +111,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
         {/* Background Image with Deep Red & Blue Luxury Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_emergency_rescue_1791785925108.jpg"
+            src={APP_IMAGES.hero}
             alt="Emergency Roadside Rescue Vehicle, Car and Motorcycle in Singapore"
             referrerPolicy="no-referrer"
             className="h-full w-full object-cover object-center opacity-40 brightness-90 filter"
@@ -296,7 +297,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
             <div className="group rounded-2xl border border-slate-800/90 bg-[#09111D] overflow-hidden flex flex-col hover:border-red-800/60 transition-all duration-300 shadow-xl">
               <div className="relative h-44 w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/why_24hr_night_standby_1791786875690.jpg"
+                  src={APP_IMAGES.why24hr}
                   alt="24-Hour Standby Roadside Rescue in Singapore"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90"
@@ -320,7 +321,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
             <div className="group rounded-2xl border border-slate-800/90 bg-[#09111D] overflow-hidden flex flex-col hover:border-red-800/60 transition-all duration-300 shadow-xl">
               <div className="relative h-44 w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/why_fast_response_1791786889473.jpg"
+                  src={APP_IMAGES.whyFastResponse}
                   alt="Rapid Roadside Response on Singapore Expressway"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90"
@@ -344,7 +345,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
             <div className="group rounded-2xl border border-slate-800/90 bg-[#09111D] overflow-hidden flex flex-col hover:border-red-800/60 transition-all duration-300 shadow-xl">
               <div className="relative h-44 w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/why_professional_tech_1791786900722.jpg"
+                  src={APP_IMAGES.whyProfessional}
                   alt="Professional Automotive Technician Diagnostics"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90"
@@ -368,7 +369,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
             <div className="group rounded-2xl border border-slate-800/90 bg-[#09111D] overflow-hidden flex flex-col hover:border-red-800/60 transition-all duration-300 shadow-xl">
               <div className="relative h-44 w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/why_reliable_service_1791786911495.jpg"
+                  src={APP_IMAGES.whyReliable}
                   alt="Reliable High Grade Battery and Tyre Repair Equipment"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90"
@@ -392,7 +393,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenEnquiry })
             <div className="group rounded-2xl border border-slate-800/90 bg-[#09111D] overflow-hidden flex flex-col hover:border-red-800/60 transition-all duration-300 shadow-xl">
               <div className="relative h-44 w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/why_customer_convenience_1791786925063.jpg"
+                  src={APP_IMAGES.whyConvenience}
                   alt="Customer Convenience Roadside Rescue in Singapore"
                   referrerPolicy="no-referrer"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90"

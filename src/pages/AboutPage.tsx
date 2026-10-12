@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { PageRoute } from '../types';
 import { BUSINESS_INFO } from '../data/servicesData';
+import { APP_IMAGES } from '../assets/images';
 
 interface AboutPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -79,7 +80,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenEnquiry 
             <div className="lg:col-span-5 relative">
               <div className="rounded-2xl border border-slate-800 bg-[#0A1220] p-3 shadow-2xl overflow-hidden">
                 <img
-                  src="/src/assets/images/hero_emergency_rescue_1791785925108.jpg"
+                  src={APP_IMAGES.hero}
                   alt="Roadside Assistance Operations in Singapore"
                   referrerPolicy="no-referrer"
                   className="rounded-xl w-full h-80 object-cover"

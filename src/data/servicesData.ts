@@ -1,4 +1,5 @@
 import { ServiceItem } from '../types';
+import { APP_IMAGES } from '../assets/images';
 
 export const BUSINESS_INFO = {
   name: '24Hrs Motorcycle Motorbike Car Battery & Tyre Repair Emergency Rescue Hotline',
@@ -25,7 +26,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Old battery disposal and terminal anti-corrosion treatment'
     ],
     vehicleTypes: ['Sedans', 'SUVs', 'Vans', 'Light Trucks', 'Hybrids'],
-    imagePath: '/src/assets/images/service_battery_replacement_1791785950727.jpg'
+    imagePath: APP_IMAGES.serviceBattery
   },
   {
     id: 'motorcycle-battery',
@@ -40,7 +41,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Voltage regulator and stator check'
     ],
     vehicleTypes: ['Class 2, 2A, 2B Bikes', 'Maxi-Scooters', 'Sportbikes', 'Cruisers'],
-    imagePath: '/src/assets/images/service_battery_replacement_1791785950727.jpg'
+    imagePath: APP_IMAGES.serviceBattery
   },
   {
     id: 'car-tyre-repair',
@@ -55,7 +56,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Rim and bead leak inspection'
     ],
     vehicleTypes: ['Passenger Cars', 'Continental Vehicles', 'Electric Vehicles', 'MPVs'],
-    imagePath: '/src/assets/images/service_tyre_repair_1791785967377.jpg'
+    imagePath: APP_IMAGES.serviceTyre
   },
   {
     id: 'motorcycle-tyre-assistance',
@@ -70,7 +71,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Front and rear wheel balance check'
     ],
     vehicleTypes: ['Commuter Bikes', 'Delivery Motorbikes', 'Touring Bikes', 'Café Racers'],
-    imagePath: '/src/assets/images/service_motorcycle_rescue_1791785982473.jpg'
+    imagePath: APP_IMAGES.serviceMotorcycle
   },
   {
     id: 'emergency-rescue',
@@ -85,7 +86,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Direct contact with dispatch team with live updates'
     ],
     vehicleTypes: ['All Private Cars', 'Motorcycles', 'Commercial Fleets', 'Taxis & Private Hire'],
-    imagePath: '/src/assets/images/hero_emergency_rescue_1791785925108.jpg'
+    imagePath: APP_IMAGES.hero
   },
   {
     id: 'breakdown-assistance',
@@ -100,6 +101,6 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Assistance coordinate for safe onward transport if immobilised'
     ],
     vehicleTypes: ['Motorcycles', 'Cars', 'Delivery Vans'],
-    imagePath: '/src/assets/images/service_motorcycle_rescue_1791785982473.jpg'
+    imagePath: APP_IMAGES.serviceMotorcycle
   }
 ];
